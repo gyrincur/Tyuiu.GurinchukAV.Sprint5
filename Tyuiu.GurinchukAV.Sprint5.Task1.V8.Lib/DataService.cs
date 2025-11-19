@@ -20,7 +20,6 @@ namespace Tyuiu.GurinchukAV.Sprint5.Task1.V8.Lib
             string strY;
             for (int x = startValue; x <= stopValue; x++)
             {
-               
                 if (x == 1)
                 {
                     y = 0.0; 
@@ -32,9 +31,8 @@ namespace Tyuiu.GurinchukAV.Sprint5.Task1.V8.Lib
                     y = 4.0 - 2.0 * x + numerator / denominator;
                 }
                 y = Math.Round(y, 2);
-
-                strY = y.ToString("F2");
-                if (x < stopValue) 
+                strY = Convert.ToString(y);
+                if (x != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
                 }

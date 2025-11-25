@@ -12,7 +12,7 @@ namespace Tyuiu.GurinchukAV.Sprint5.Task6.V13.Test
             string path = @"C:\DataSprint5\Sprint5Task6\Sprint5Task6\InPutDataFileTask6V13.txt";
 
             var res = ds.LoadFromDataFile(path);
-            int wait = 2;
+            int wait = 3;
             Assert.AreEqual(wait, res);
 
         }

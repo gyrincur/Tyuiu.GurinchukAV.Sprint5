@@ -13,9 +13,10 @@ namespace Tyuiu.GurinchukAV.Sprint5.Task6.V13.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    for (int i = 0; i < line.Length - 1; i++)
+                    string lowerLine = line.ToLower();
+                    for (int i = 0; i < lowerLine.Length - 1; i++)
                     {
-                        if (line[i] == 'с' && line[i + 1] == 'с')
+                        if (lowerLine[i] == 'с' && lowerLine[i + 1] == 'с')
                         {
                             count++;
                         }

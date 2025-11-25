@@ -15,7 +15,7 @@ namespace Tyuiu.GurinchukAV.Sprint5.Task7.V19.Lib
             }
 
             string content = File.ReadAllText(path);
-            string result = System.Text.RegularExpressions.Regex.Replace(content,"cc","",System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            string result = System.Text.RegularExpressions.Regex.Replace(content,"сс","",System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             File.WriteAllText(pathSaveFile, result);
             return pathSaveFile;
         }
